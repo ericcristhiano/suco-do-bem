@@ -1,0 +1,207 @@
+/* ================ RESET ================ */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* ================ END RESET ================ */
+
+/* ================ PRESETS ================ */
+body {
+    background: #ffc501;
+    overflow-x: hidden;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #e2af01;
+    box-shadow: 2px 2px 20px -8px rgba(0, 0, 0, .5);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.btn.btn-start {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    padding: 20px 40px;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+/* ================ END PRESETS ================ */
+
+/* ================ CANVAS ================ */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    top: 10px;
+    left: 10px;
+}
+
+.element {
+    position: absolute;
+}
+
+.text {
+    right: 40px;
+    top: 30px;
+}
+
+.time {
+    right: 10px;
+    bottom: 10px;
+}
+
+.score {
+    left: 10px;
+    bottom: 10px;
+}
+
+.config {
+    bottom: 300px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.premios {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    background: white;
+    color: #c69900;
+}
+
+.premios h1 {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 4px;
+}
+
+.premios ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.premios li {
+    padding: 4px;
+    font-size: 14px;
+}
+
+.premio {
+    background: #c69900;
+    color: white;
+}
+/* ================ END CANVAS ================ */
+
+#config-modal {
+    position: absolute;
+    width: 768px;
+    background: white;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all .5s;
+    padding: 50px;
+    z-index: 999;
+}
+
+#config-modal.active {
+    transform: translateX(0);
+}
+
+.form-login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#config-modal input[type="text"],
+#config-modal input[type="number"],
+#config-modal input[type="password"] {
+    border: 1px solid #fec401;
+    color: #01ffc0;
+    padding: 5px 10px;
+    position: relative;
+    top: -10px;;
+}
+
+#config-modal .form-login  input[type="password"] {
+    top: 0;
+}
+
+#config-modal #save {
+    cursor: pointer;
+}
+
+#config-modal .row {
+    margin-bottom: 50px;
+}
+
+#config-modal .row img {
+    margin: 0 20px;
+}
+
+#config-modal .premios-img {
+    margin-bottom: 30px;
+}
+
+.time span,
+.score span {
+    font-weight: bold;
+    color: white;
+    font-size: 26px;
+    position: relative;
+    top: -10px;
+}
+
+.score span {
+    top: -30px;
+}
+
+#restart {
+    z-index: 99;
+    position: absolute;
+}
+
+.block {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.block p {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

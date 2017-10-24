@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sucos do bem</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <div class="block hidden">
+        <p>Promoter. Please increase the premiums.</p>
+    </div>
+
+    <div id="config-modal">
+        <form method="post" class="form-login">
+            <label>
+                Password
+                <input id="password" type="password" value="relatorio@cliente">
+            </label>
+
+            <button class="btn" type="submit">Login</button>
+        </form>
+        
+        <div class="config-form hidden">
+            <div class="row">
+                <img src="assets/img/config-big.png" alt="">
+            </div>
+
+            <img class="premios-img" src="assets/img/premios.png" alt="">
+
+            <div class="row">
+                <img src="assets/img/01.png" alt="">
+                <input id="config-01-nome" type="text" />
+                <img src="assets/img/x.png" alt="">
+                <input id="config-01-quantidade" type="number" min="1" step="1" />
+            </div>
+
+            <div class="row">
+                <img src="assets/img/02.png" alt="">
+                <input id="config-02-nome" type="text" />
+                <img src="assets/img/x.png" alt="">
+                <input id="config-02-quantidade" type="number" min="1" step="1" />
+            </div>
+
+            <div class="row">
+                <img src="assets/img/03.png" alt="">
+                <input id="config-03-nome" type="text" />
+                <img src="assets/img/x.png" alt="">
+                <input id="config-03-quantidade" type="number" min="1" step="1" />
+            </div>
+
+            <img id="save" src="assets/img/save.png" alt="Save button" />
+        </div>
+    </div>
+
+    <img id="config" class="element config" src="assets/img/config.png" alt="">
+
+    <div class="header">
+        <div class="premios">
+            <h1>Prêmios</h1>
+            <ul>
+                <li class="quantidade quantidade-1">10</li>
+                <li class="premio premio-1">Suco de laranja</li>
+                <li class="quantidade quantidade-2">10</li>
+                <li class="premio premio-2">Suco de laranja</li>
+                <li class="quantidade quantidade-3">10</li>
+                <li class="premio premio-3">Suco de laranja</li>
+            </ul>
+        </div>
+
+        <img class="element logo" src="assets/img/logo.png" alt="Logo" />
+        <img class="element text" src="assets/img/text.png" alt="Logo" />
+    </div>
+
+    <div class="end-message hidden">
+        <button id="restart" class="btn btn-start">Restart game</button>
+    </div>
+
+    <div class="footer">
+        <div class="score element">
+            <img class="" src="assets/img/score.png" alt="Score" />
+            <span>0</span>
+        </div>
+
+        <div class="element time">
+            <img class="" src="assets/img/time.png" alt="Time" />
+            <span>1:00</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="btn btn-start" id="start-game">Start Game</button>
+        <canvas id="canvas" width="1024" height="768"></canvas>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
